@@ -162,6 +162,7 @@ nav {
 .ikons {
     display: flex;
     flex-direction: row;
+    background-color: #F4F4F4;
     
 }
 

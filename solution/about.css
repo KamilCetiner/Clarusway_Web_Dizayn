@@ -2,6 +2,7 @@ body {
 
     margin: 0px;
     padding: 0px;
+    background-color: #F4F4F4;
 }
 
 header{
@@ -125,9 +126,11 @@ nav {
    padding-left: 55px;
    color: white;
    
-   
-  
 
+}
+
+article, aside {
+    background-color: #F4F4F4;
 }
 
 .subs_text p {
@@ -165,13 +168,13 @@ nav {
 } 
 
 .page_middle {
-
-    width: 100%;    
-    display: inline-grid;
+    
+    width: 60%;
+    box-sizing: border-box;
+    display: grid;
     grid-template-columns: 800px 400px 800px;
     grid-gap: 60px;
     padding: 20px;
-    position: relative;
     position: absolute;    
     top: 25%;
     left: 10%;
@@ -185,6 +188,7 @@ nav {
 }
 
 aside {
+    
     box-sizing: border-box;
     background-color: rgb(53, 66, 74);
     width: 100%;
@@ -197,6 +201,8 @@ aside {
 .first_parag {
 
     line-height: 20px;
+    
+    
 }
 .second_parag {
     background-color: rgb(53, 66, 74);
@@ -211,20 +217,23 @@ aside {
 
 footer {
     position: absolute;
-    top: 85%;
+    width: 100%;
+    top: 100%;
+    border-top: 5px solid rgb(169, 80, 139);
+    background-color: #ffffff
     
 }
 
-.cw_logo {
-    
-    border-top: 5px solid rgb(169, 80, 139);
-    text-align: center;
-    
-}
+
 
 .cw_logo img {
     width: 180px;
     
+} 
+
+.cw_logo {
+
+    text-align: center;
+    margin-bottom: 50px;
     
-    
-} */
+}

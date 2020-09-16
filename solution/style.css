@@ -4,64 +4,63 @@ body {
     padding: 0px;
 }
 
-header{
-    margin-top: -20px;
-    width: 100%;
-    height: 120px;
-    display: block;
+header {
     background-color: rgb(53, 66, 74);
     border-bottom: 5px solid rgb(169, 80, 139);
+   
     
 }
 
-nav {
-    width: 1250px;    
-    height: 100%;
-    margin: 0 auto;
+#nav {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.75rem;
+    height: 100px;
 
 
 }
+
+#nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+#nav ul li a {
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+
+#nav ul li a:hover {
+    font-weight: bold;    
+}
+
+
+
+.container_navbar {
+
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+ 
 .Clarusway_txt {
    
-   height: 120%;
-   display:table;  
-   float:left;
-   font-size: 20px;
-
-   
+    height: 20%;
+    font-size: 20px;
   
-}
+ }
+ 
 
 .Clarusway_txt h1 {
     color:#ffffff;
     font-family: Arial, Helvetica, sans-serif;
     display: table-cell;
     vertical-align: middle;
-
-}
-
-.links {
-    float: right;
-    height: 100%;
-
-}
-
-.links a {
-
-    height: 100%;
-    display: table;
-    float: left;
-    padding: 0px 20px;
-    
-}
-
-.links a li {
-    display: table-cell;
-    vertical-align: middle ;
-    height: 100%;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
 
 }
 
@@ -96,21 +95,18 @@ nav {
 
 .subscribe {
     position: absolute;
-    top: 65%;
-    left: 0px;
     background-color: rgb(53, 66, 74);
+    top: 67%;
+    left: 0px;    
     width: 100%;
-    height: 100px;
-}
-
-
-.subscribe {
-    display: inline-block;
     height: 13%;
 }
 
+
+
+
 .middle {
-    width: 1350px;    
+    width: 90%;    
     height: 100%;
     margin: 0 auto;
     padding: 10px;
@@ -118,7 +114,7 @@ nav {
 
 .subs_text {
     
-   height: 100%;
+   
    display:absolute;  
    float:left;
    
@@ -130,11 +126,12 @@ nav {
     font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
+
     
 }
 
 .right_subs {
-    margin-top: 25px;
+    margin-top: 15px;
 
     
 }
@@ -146,8 +143,8 @@ nav {
     margin-left: 3px;
     background-color:  rgb(169, 80, 139) ;
     color: white;
-    border:none
-    
+    border:none;
+   
 
 } 
 #subscribe {
@@ -210,4 +207,107 @@ h4 {
 
 
 }
+
+
+@media only screen and (max-width: 600px) {
+
+    #nav {
+        
+        flex-direction: column;
+       
+        
+    }   
+
+    .Clarusway_txt h1{
+
+       font-size: 25px;
+       margin-bottom: 40px;
+       height: 60px;
+       padding-left: 15px;
+    }
+
+
+    .container_navbar {
+        max-width: 100%;
+        margin-left: -25px;
+        
+    }
+
+    
+    #nav ul li a {
+        padding: 1.25rem;
+        font-size: 1rem;
+        margin-left: -25px;
+        
+    }
+
+    .First_Section {
+        height: 500px;
+    }
+
+    .First_Section h1{
+        font-size: 40px;
+        text-align: left;
+        
+    }
+     
+    .First_Section p{
+        font-size: 20px;
+
+        
+    
+    }
+
+    .professional_txt  {
+
+        margin-left: -35px;
+        margin-right: 15px;
+    }
+
+    .professional_txt h1 {
+
+        /* margin-left: 10px;
+        margin-right: 15px;
+        padding-left: 300px; */
+        text-align: center;
+    }
+    
+    
+    .subscribe {
+        position: absolute;
+        top: 80%;
+          
+        width: 100%;
+        height: 15%;
+    }
+
+    #subscribe {
+        float: left;
+        margin-left: 2px;
+        width: 20px;
+
+    }
+
+    .ikons {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    #subscribe , #submit {
+        flex: 0 0 33.33333%;
+        max-width: 65%;
+
+        
+
+    }
+
+    .right_subs {
+        position: relative;
+        top: 80%;
+    }
+
+ 
+
+}
+
 

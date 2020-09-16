@@ -3,29 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="about.css">
-    <title>Document</title>
+    <meta name="keyword"  content="Course, IT Kurs, Fullstack" />
+    <meta name="description" content="Kamil Cetiner Web Dizayn">
+    <link rel="stylesheet" href="services.css">
+
+ 
+    <!-- Tablet Css(Resposive) -->
+    <link rel="stylesheet" media="(max-width:768px)"  href="../tablet.css">
+    <link rel="stylesheet" media="(max-width:500px)"  href="../mobile.css">
+
+    <title>Clarusway Main Web Page</title>
 </head>
 <body>
 
-    <header>
+    <header> 
+        <div class="container_navbar">
+            <nav id="nav">
+                <div class="Clarusway_txt">
 
-        <nav>
-
-            <div class="Clarusway_txt">
-
-                <h1> <span style="color: rgb(169, 80, 139);"> Clarusway </span> Web Design  </h1>
-            </div>
-               
-            
-            <ul class="links">
-                <a><li>HOME</li></a> 
-                <a><li>ABOUT</li></a>
-                <a><li>SERVICE</li></a>
-            </ul>
-
-         
-        </nav>
+                        <h1> <span style="color: rgb(169, 80, 139);"> Clarusway </span> Web Design  </h1>
+                </div>
+                    
+                    
+                <ul class="links">
+                    <li><a href="index.html" >HOME</a> </li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./services.html"> SERVICE</a></li>
+                </ul>
+                
+            </nav>
+        </div>
 
     </header>
 
@@ -46,3 +53,85 @@
         </div>
 
     </section>
+
+    <section class="middle_page3">
+        
+        <h1>Services</h1>
+        <div class="middle_page3 box1">
+            
+            
+            <h2>Website Design</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies at, vulputate id lorem. Nulla facilisi.
+
+            <br><br>Pricing: $1,000 - $3,000</p>
+        </div>
+
+        <div class="middle_page3 box2">
+            <h2>Website Maintenance</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies at, vulputate id lorem. Nulla facilisi.
+
+                <br> <br>Pricing: $250 per month</p>
+        </div>
+        
+        <div class="middle_page3 box2">
+            <h2>Website Hosting</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies at, vulputate id lorem. Nulla facilisi.
+                
+                <br><br>Pricing: $25 per month</p>
+        </div>
+
+
+    </section>
+
+    <aside>
+        <div class="continer_form">
+            <form action="#">
+                <div class="row">
+                    <div class="col1">                    
+                        <h2>Get A Quote</h2>
+                            <label for="fname" >Name</label>
+                    </div>
+                    <div class="col2">
+                        <input type="text" id="fname" name="First Name" placeholder="Name">
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col1">                    
+                        <label for="Email" >Email</label>
+                    </div>
+                    <div class="col2">
+                        <input type="email" id="Emil" name="E-Mail" placeholder="E-Mail Address">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col1">                    
+                        <label for="Message" >Message</label>
+                    </div>
+                    <div class="col2">
+                        <textarea name="Message" id="Message" placeholder="Message" style="height: 50px;" ></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <input type="submit" value="Send">
+                </div>                
+        </div>
+
+    </aside>
+
+        
+ 
+    </section>
+
+    <footer>
+
+        <div class="cw_logo">
+
+            <p>Clarusway Web Design, Copyright © 2020</p>
+            <a href="https://clarusway.com/"><img src="./images/Clarusway-LOGOTYPE.png" alt="Clarusway_Logo"> </a>
+        </div>
+
+    </footer>
